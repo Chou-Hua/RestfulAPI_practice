@@ -59,46 +59,4 @@ public class PlayerApi {
         ApiFuture<WriteResult> writeResult =playeraccount.document("Player1").delete();
         return 1;
     }
-/*
-    @PostMapping("/getPlayer")
-    public PlayerInfo getPlayer(@RequestParam("id") int id) {
-        return new PlayerInfo();
-    }
-*/
 }
-/*
-    @Autowired(required = false)
-    PatService patService;
-    @Autowired(required = false)
-    PlayerInfo playerInfo;
-
-    @GetMapping("/getname")
-  /*  public String getName(@RequestBody String name ) throws InterruptedException, ExecutionException {
-    };*/
-/*
-    @RequestMapping("/get/Player")
-    public PlayerInfo platertest(){
-        PlayerInfo playerInfo = new PlayerInfo();
-        playerInfo.setAccount(1000);
-        playerInfo.setId(666);
-        playerInfo.setName("cindy");
-        return  playerInfo;
-    }
-}
-*/
-/*
-@RestController
-public class PlayerApi {
-    @Autowired(required=false)
-    PlayerInfo playerInfo;
-        @RequestMapping("/get/Player")
-        public PlayerInfo platertest(){
-            PlayerInfo playerInfo = new PlayerInfo();
-            playerInfo.setAccount(1000);
-            playerInfo.setId(666);
-            playerInfo.setName("cindy");
-            return  playerInfo;
-        }
-
-}
-*/
